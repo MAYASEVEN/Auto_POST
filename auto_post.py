@@ -15,7 +15,7 @@ if __name__ == '__main__':
 		post_data = urllib.urlencode({'0<text>' : email, '1<text>' : password})
 		opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookielib.FileCookieJar("cookies")))
 		opener.addheaders = [('User-agent', 'Mozilla/5.0')]
-		opener.open('http://localhost/testform.php', post_data)
+		opener.open('http://thaijakfreemce.yolasite.com', post_data)
 		time.sleep(sleep)
 		print email,password,count
 		count = count + 1
