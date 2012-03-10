@@ -7,7 +7,7 @@ def random_string():
 	return ''.join(random.choice(chars) for x in range(size))
 
 if __name__ == '__main__':
-	sleep = 0.2
+	sleep = 0
 	count = 1;
 	while(1):
 		email = random_string() + ''.join(random.sample(['@hotmail.com','@gmail.com','@facebook.com','@windowslive.com'], 1))
