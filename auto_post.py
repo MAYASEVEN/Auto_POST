@@ -5,10 +5,9 @@ def random_string(size=random.randint(4,12), chars=string.ascii_lowercase + stri
 	return ''.join(random.choice(chars) for x in range(size))
 
 if __name__ == '__main__':
-	sleep = 1.5
+	sleep = 1.7
 	count = 1;
 	while(100):
-		
 		email = random_string() + ''.join(random.sample(['@hotmail.com','@gmail.com','@facebook.com','@windowslive.com'], 1))
 		password = random_string()
 		post_data = urllib.urlencode({'0<text>' : email, '1<text>' : password})
